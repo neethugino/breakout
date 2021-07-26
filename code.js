@@ -124,10 +124,10 @@ function draw() {
  
   
   //Making the ball bounceOff the paddle and three sides of canvas
-  createEdgeSprites();
-  ball.bounceOff(rightEdge);
-  ball.bounceOff(leftEdge);
-  ball.bounceOff(topEdge);
+  edges = createEdgeSprites();
+  ball.bounceOff(edges[0]);
+  ball.bounceOff(edges[1]);
+  ball.bounceOff(edges[2]);
   ball.bounceOff(paddle);
 
   //Moving the paddle with mouse along the x-axis
